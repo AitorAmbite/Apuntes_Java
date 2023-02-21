@@ -1,5 +1,7 @@
 package Bucles;
 
+import java.util.Random;
+
 public class While {
     /*
     * Estructura
@@ -7,7 +9,6 @@ public class While {
     *   Instrucciones a ejecutar
     * }
     * */
-
     public static void main(String[] args) {
         // Queremos batir los huevos un numero par de veces, pero que sea mas de 2 veces al menos.
         /*
@@ -18,13 +19,23 @@ public class While {
         * 4. si cambiasemos NumVecesBatidosHuevos = 4; que pasaria?
         *
         * */
-        int NumVecesBatidosHuevos = 0;
-        boolean huevosBatidos = false;
+        //int NumVecesBatidosHuevos = 0;
+        //boolean huevosBatidos = false;
+//
+        //while(NumVecesBatidosHuevos <= 2 || NumVecesBatidosHuevos % 2 != 0){
+        //    NumVecesBatidosHuevos++;
+        //    System.out.println("hemos batido los huevos "+NumVecesBatidosHuevos);
+        //}
 
-        while(NumVecesBatidosHuevos <= 2 || NumVecesBatidosHuevos % 2 != 0){
-            NumVecesBatidosHuevos++;
-            System.out.println("hemos batido los huevos "+NumVecesBatidosHuevos);
+
+        //ejemplo
+        int numRand = new Random().nextInt(); // 40
+
+        while(numRand < 50){
+            System.out.println(numRand);
+            numRand = new Random().nextInt();// 32 16 8 64
         }
+
     }
 
 
