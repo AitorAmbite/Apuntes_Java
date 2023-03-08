@@ -1,3 +1,5 @@
+import java.util.Random;
+
 public class Funciones {
     /*
     * Funciones, son porciones de codigo, las cuales realizan operaciones (como dijo rajoy..."hacen cosas")
@@ -15,9 +17,17 @@ public class Funciones {
     *
     * EJEMPLO:
     * */
-    public int suma(int a,int b){
-        return a+b;
+
+    public static int suma(int pepe,int b){
+        return pepe+b;
     }
+    int l = suma(1,3);
+    public static int GenerarAleatorio(){
+        Random generador = new Random();
+        return generador.nextInt();
+    }
+
+
     /*
     * Aqui hemos definido una funcion
     * con "modificadorVisibilidad" -> public
@@ -60,4 +70,9 @@ public class Funciones {
     public void funcionSinValorDeRetorno(String message){
         System.out.println(message);
     }
+
+
+
+
+
 }
